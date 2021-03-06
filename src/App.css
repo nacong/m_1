@@ -1,15 +1,11 @@
 @charset "utf-8";
-/* reset */
+
 body,p{margin:0;padding:0};
 fieldset,img{border:0 none};
 
+
 * {
   background-color:#FAF5F5;
-  -ms-user-select: none; 
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .header {
