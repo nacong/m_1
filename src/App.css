@@ -7,13 +7,16 @@ p{
 
 body{
   background-color: #faf5f5;
+  /* margin: 5vh; */
+  margin: 0;
+  padding: 0;
 }
 
 
 .header {
   padding-top: 4vw;
   width: 100%;
-  font-size:50px;
+  font-size: 50px;
   text-align:center;
   color:#7673ff;
   font-family: 'Noto Sans KR', sans-serif;
@@ -27,7 +30,7 @@ body{
 .artist {
   padding-top: 4vw;
   padding-left: 10%;
-  font-size:50px;
+  font-size:min(50px, 12vw);
   margin: 0 auto;
   color:#A9A4F0;  
   font-family: 'Noto Sans KR' , sans-serif;
@@ -36,21 +39,24 @@ body{
 }
 
 #A1 {
-  font-size:30px; 
+  font-size:min(30px, 7vw); 
   font-weight: 700;
 }
 
 .art-container {
   padding: 10%;
+  padding-left: 11%;
   padding-top: 2vh;
   font-size:45px;
   margin: 0 auto;
   text-align:center;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, 340px);
-  grid-template-rows: repeat(auto-fill, 376px);
-  gap: 40px
+  grid-template-columns: repeat(auto-fit, 340px);
+  grid-template-rows: repeat(auto-fit, 376px);
+  gap: 40px;
+
+  justify-content: space-between;
 }
 
 
