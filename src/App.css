@@ -11,8 +11,6 @@ body{
 
 
 .header {
-  padding:50px;
-  padding-bottom: 100px;
   font-size:50px;
   text-align:center;
   color:#7673ff;
@@ -25,7 +23,8 @@ body{
 }
 
 .artist {
-  padding: 20px 10%;
+  padding-top: 5%;
+  padding-left: 10%;
   font-size:50px;
   margin: 0 auto;
   color:#A9A4F0;  
@@ -39,20 +38,22 @@ body{
   font-weight: 700;
 }
 
-.art {
-  padding-left: 12%;
+.art-container {
+  padding: 10%;
+  padding-top: 2.5%;
   font-size:45px;
   margin: 0 auto;
   text-align:center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-rows: repeat(auto-fill, 376px);
+  gap: 40px
 }
 
 
-#df {
-  width:18vw; 
-  height:19vw; 
-  float:left; 
-  margin:30px 30px 20px 20px;
-  background-color:#f7f7fa;  
+#art-box {
+  background-color:#f7f7fa;
   box-shadow: 3.536px 3.536px 10px 0px rgba(2, 7, 24, 0.02),
   10.607px 10.607px 20px 0px rgba(79, 110, 243, 0.05),
   -6.364px -6.364px 30px 0px rgba(255, 255, 255, 0.72);
@@ -64,16 +65,25 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
   font-size: 25px;
-  padding: 2% 2%;
-  border-radius: 10px;
 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
   text-shadow: 0px 0px 80px rgba(129, 119, 255, 0.5);
+
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 #img {
-  width:15vw; 
-  height:15vw;
+  width:300px;
+  height:300px;
   border-radius: 10px;
 
   box-shadow: -6.364px -6.364px 30px 0px rgba(255, 255, 255, 0.004),10.607px 10.607px 20px 0px rgba(79, 110, 243, 0.05),3.536px 3.536px 10px 0px rgba(2, 7, 24, 0.02);
+}
+
+#img-padding {
+  padding: 10px 20px 10px 20px;
 }
